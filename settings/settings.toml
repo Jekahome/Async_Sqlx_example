@@ -1,0 +1,5 @@
+host="localhost" 
+user="rust" 
+port=5432 
+password='job_queue' 
+dbname="rust"

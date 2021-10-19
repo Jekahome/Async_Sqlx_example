@@ -1,0 +1,39 @@
+[package]
+name = "sqlx_example"
+version = "0.1.0"
+edition = "2018"
+default-run = "main"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+# (on by default): Use the async-std runtime and native-tls TLS backend.
+sqlx = { version = "0.5", features = [ "runtime-async-std-native-tls","postgres","macros","migrate","chrono" ] }
+futures = "0.3"
+chrono="0.4"
+bytes = "1.0.1"
+async-std="1.10"
+
+# config
+config="0.11"
+lazy_static="1.4"
+
+# custom error
+thiserror = "1"
+anyhow = "1"
+
+# migrations 
+barrel= {version ="0.6", features = ["pg"]}
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "migrations"
+path = "src/migrations.rs"
+
+[[bin]]
+name = "migrations-barrel"
+path = "src/migrations_barrel.rs"
