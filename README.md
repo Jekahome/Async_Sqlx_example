@@ -20,6 +20,9 @@ $ docker rm -f rust_job_queue
 ```
 
 ## Links
+
+[RESTful API in Sync & Async Rust](https://github.com/Jekshmek/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md)
+
 [Sqlx async SQL](https://crates.io/crates/sqlx)
 
 [Sqlx doc](https://docs.rs/sqlx/0.5.9/sqlx/index.html)
